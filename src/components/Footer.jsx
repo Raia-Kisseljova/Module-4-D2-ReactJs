@@ -1,8 +1,8 @@
 
 const Footer = () => (
-    <div className="containerFluid">
+    <div className="container footer">
         <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-3">
                 <ul>
                     <li>Our company</li>
                     <li>Contact us</li>
@@ -10,7 +10,7 @@ const Footer = () => (
                     <li>Why we?</li>
                 </ul>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-3">
                 <ul>
                     <li>Shop</li>
                     <li>Return Policy</li>

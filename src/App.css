@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+.jumbotron{
+  height: 600px;
+  background-image: url("./Data/enjoying-a-good-book-and-a-glass-of-white-wine-hard-cover-book-with-plain-cover-margjohnsonva_t20_XvXNxz.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.book-image{
+  height: 250px;
+}
+
+.card-book{
+  height: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px;
+}
+
+.header-book{
+  font-size: 14px;
+  text-align: left;
+}
+  
+.footer{
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer div{
+  margin: 15px 100px;
+}
