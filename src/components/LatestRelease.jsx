@@ -1,30 +1,31 @@
-import { Container, Col, Row, Card } from 'react-bootstrap';
-import horror from '../Data/horror.json'
+import { Row, Card } from 'react-bootstrap';
 
 
-const DisplayRelease = () => {
+const DisplayRelease = (props) => {
     return (
-        <Container>
-            <Row xs={2} md={4} xl={6}>
-                {
-                    horror.map(book =>
-                        <Card className="card-book">
+        <div className="container">
+            <h2 className="my-3">Latest release</h2>
+            <Row xs={4} md={6} lg={6}>
 
+                {
+                    props.horrorProp.map(book =>
+                        <Card className="card-book" key={book.asin} >
                             <Card.Img src={book.img} className="book-image" />
                             <Card.Header className="header-book">{book.title}</Card.Header>
                         </Card>
-                    ).splice(0, 24)
+                    ).splice(0, 48)
+
                 }
             </Row>
-        </Container>
+        </div >
+
+
 
 
     )
+
 }
 
-
-// I used dwhat about my cards ?
-// BTw your editor is saving your project every second
 export default DisplayRelease
 
 

@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+#root{
+  background-color: #FFF0BE;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -42,9 +46,26 @@
   background-image: url("./Data/enjoying-a-good-book-and-a-glass-of-white-wine-hard-cover-book-with-plain-cover-margjohnsonva_t20_XvXNxz.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
 }
 
+.container-fluid{background-color: #FFF0BE;}
+.nav-nav a{
+  margin-left: 10px;
+  color: #B79586;
+  font-weight: 500;
+}
+
+.jumbotron h1{
+  font-size: 64px;
+  color: #FFF0BE;
+  -webkit-text-stroke: 1px #B79586;
+}
+
+
 .book-image{
+  
   height: 250px;
 }
 
@@ -62,11 +83,67 @@
 }
   
 .footer{
-  background-color: gray;
+  background-color:#B79586;
   display: flex;
   flex-direction: column;
+  margin-top: 80px;
+  padding: 25px;
 }
 
 .footer div{
-  margin: 15px 100px;
+  margin: 0 auto;
+}
+
+.footer ul{
+  width: 500px;
+  color: #FFF0BE;
+}
+
+.chosen-card{
+  border: 2px solid rgb(139, 245, 139);
+}
+
+.comment-container{
+  width: 500px;
+  height: 400px;
+  background-color:#B79586;
+  overflow: scroll;
+  color: #FFF0BE;
+}
+
+.title-section{
+  width: 100%;
+  padding-top: 10px;
+  height: 70px;
+  background-color:#FFF0BE;
+  color: #B79586;
+}
+
+.comment-title{
+  width: 100%;
+  margin: 15px 0;
+}
+
+.comment-section{
+  margin: 0 auto;
+
+
+}
+
+.btn-primary{
+  margin-top: 25px;
+  width: 190px;
+  font-size: 22px !important;
+  color: #FFF0BE !important;
+  font-weight: 600 !important;
+  background-color: #B79586 !important;
+  border: none !important;
+}
+
+.comments{
+  width: 250px;
+  display: flex;
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
 }
