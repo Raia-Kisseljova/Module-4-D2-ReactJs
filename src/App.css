@@ -61,6 +61,7 @@
   font-size: 64px;
   color: #FFF0BE;
   -webkit-text-stroke: 1px #B79586;
+  padding: 35px;
 }
 
 
@@ -117,6 +118,7 @@
   height: 70px;
   background-color:#FFF0BE;
   color: #B79586;
+  border: 2px solid #B79586;
 }
 
 .comment-title{
@@ -131,7 +133,8 @@
 }
 
 .btn-primary{
-  margin-top: 25px;
+  margin-bottom: 55px;
+  margin-left: 40px ;
   width: 190px;
   font-size: 22px !important;
   color: #FFF0BE !important;
@@ -146,4 +149,33 @@
   border: 1px solid white;
   justify-content: center;
   align-items: center;
+}
+
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-container input{
+  font-size: 14px;
+  width: 200px;
+  height: 35px;
+  background-color: #B79586;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin: 4px 0;
+}
+
+::placeholder{
+  color: white;
+  font-size: 12px;
+  padding: 0 7px;
+}
+
+.form-container h3{
+  color: #9b7e71;
+  margin: 20px 0;
 }

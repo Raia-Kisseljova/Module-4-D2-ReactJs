@@ -9,7 +9,7 @@ const DisplayRelease = (props) => {
 
                 {
                     props.horrorProp.map(book =>
-                        <Card className="card-book" key={book.asin} >
+                        <Card className="card-book" onClick={() => props.history.push('/about/' + book.asin)} key={book.asin} >
                             <Card.Img src={book.img} className="book-image" />
                             <Card.Header className="header-book">{book.title}</Card.Header>
                         </Card>
@@ -20,7 +20,7 @@ const DisplayRelease = (props) => {
         </div >
 
 
-
+        // onClick={() => props.setShowComments()}
 
     )
 

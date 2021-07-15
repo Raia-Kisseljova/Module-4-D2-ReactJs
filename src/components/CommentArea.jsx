@@ -27,7 +27,7 @@ function CommentArea() {
 
     return (
         // className={showWindow ? 'd-block' : 'd-none'}
-        <Container className="comment-container" >
+        <Container className="comment-container d-none" >
             <Row>
                 <div className="title-section">
                     <h1 className="text-center">Book title</h1>
